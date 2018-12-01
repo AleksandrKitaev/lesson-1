@@ -8,13 +8,13 @@ function oClock() {
         m = time.getMinutes().toString(),
         s = time.getSeconds().toString();
     
-    if (h.lenght < 2) {
+    if (h.length < 2) {
         h = '0' + h;
     } 
-    if (m.lenght < 2) {
+    if (m.length < 2) {
         m = '0' + m;
     }
-    if (s.lenght < 2) {
+    if (s.length < 2) {
         s = '0' + s;
     }
 
