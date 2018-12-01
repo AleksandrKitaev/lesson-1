@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // Таймер
 
-    let deadline = '2018-12-02';
+    let deadline = '2018-10-21';
 
     function getTimeRemaining(endtime) {
         let t = Date.parse(endtime) - Date.parse(new Date()),
@@ -79,6 +79,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 seconds.textContent = t.seconds;    
                 
             if (t.hours <= 0 && t.minutes <= 0 && t.seconds <= 0) {
+                clearInterval(timeInterval);
                 hours.textContent = '00';
                 minutes.textContent = '00';
                 seconds.textContent = '00';
